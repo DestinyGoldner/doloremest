@@ -1,0 +1,36 @@
+{
+  "version": "2.4.7",
+  "description": "The Safeheron MPC Snap.",
+  "proposedName": "Safeheron",
+  "repository": {
+    "url": "https://github.com/safeheron/multi-mpc-snap-monorepo",
+    "type": "github"
+  },
+  "source": {
+    "shasum": "kLZowvzXg6KmZSWb+aPgW0skEyxNAx9MQWoIjAbLFVQ=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "dist/images/logo.svg",
+        "packageName": "@safeheron/mpcsnap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "snap_dialog": {},
+    "endowment:keyring": {
+      "allowedOrigins": [
+        "https://mpcsnap.safeheron.com"
+      ]
+    },
+    "snap_manageState": {},
+    "endowment:rpc": {
+      "dapps": true,
+      "snaps": false
+    },
+    "endowment:webassembly": {},
+    "snap_manageAccounts": {}
+  },
+  "manifestVersion": "0.1"
+}
